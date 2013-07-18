@@ -11,14 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130710100545) do
+ActiveRecord::Schema.define(version: 20130711074511) do
 
   create_table "hospitals", force: true do |t|
     t.string   "title",            limit: 50
     t.text     "physical_address"
     t.text     "postal_address",   limit: 255
-    t.string   "general_phone",    limit: 10
-    t.string   "fax",              limit: 10
+    t.string   "general_phone",    limit: 12
+    t.string   "fax",              limit: 12
     t.datetime "created_at"
     t.datetime "updated_at"
   end

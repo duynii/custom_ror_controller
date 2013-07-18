@@ -7,7 +7,7 @@ class <%= controller_class_name %>Controller < ApplicationController
   before_action :set_<%= singular_table_name %>, only: [:show, :edit, :update, :destroy]
 
   # GET <%= route_url %>
-  ### This is huey
+  ### This is huey dee
   def index
     @<%= plural_table_name %> = <%= orm_class.all(class_name) %>
   end
